@@ -21,10 +21,11 @@ header {
   padding: 20px 200px;
 }
 
-header h3 {
+.all-title {
   color: var(--Dark-01, #131313);
-  font-size: 45px;
+
   font-weight: 700;
+  font-size: 2.8rem;
 }
 
 nav {
@@ -59,7 +60,7 @@ nav li a {
   font-size: 64px;
   font-weight: 700;
 }
-.banner-description {
+.description {
   color: var(--Dark-03, #727272);
   font-size: 16px;
   font-weight: 400;
@@ -80,13 +81,131 @@ nav li a {
   }
 }
 
+/* main section */
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.Quick-list {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.quick-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.quick-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.quicklish {
+  color: var(--Dark-03, #727272);
+  font-size: 45px;
+  font-weight: 500;
+}
+.ofours {
+  color: var(--Dark-01, #131313);
+  font-size: 45px;
+  font-weight: 700;
+}
+.feathers {
+  color: #ff900e;
+  font-size: 45px;
+  font-weight: 700;
+}
+.facts h3 {
+  margin-bottom: 10px;
+}
+.facts p {
+  margin-top: 10px;
+}
+.icon-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.icon-section div {
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+}
+.icon-section img {
+  margin-top: 30px;
+}
+.icon-section h2 {
+  color: var(--Dark-02, #424242);
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.icon-section p {
+  margin-top: 0;
+  padding-top: 0;
+  color: var(--Dark-03, #727272);
+  font-size: 20px;
+  font-weight: 600;
+}
+.Sponspors h3 {
+  color: var(--Dark-01, #131313);
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-top: 130px;
+  margin-bottom: 10px;
+}
+.Sponspors p {
+  margin-top: 10px;
+  color: var(--Dark-03, #727272);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.Sponspors-icon {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.Sponspors-icon img {
+  filter: grayscale(90%);
+}
+
+/* footer section */
+footer {
+  margin-top: 120px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 0 solid black;
+  border-radius: 8px;
+  padding: 20px 150px;
+  background: #fff4e7;
+  color: var(--Dark-02, #424242);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
 /* tablet or medium devices */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header {
     padding: 50px;
   }
-  nav {
+  nav,
+  .Quick-list {
     flex-direction: column;
+  }
+  .quick-image {
+    grid-template-columns: 1fr;
   }
 }
